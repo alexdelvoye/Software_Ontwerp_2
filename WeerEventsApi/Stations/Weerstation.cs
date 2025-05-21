@@ -8,16 +8,20 @@ namespace WeerEventsApi.Stations
         public Stad Stad {  get; set; }
         public List<Meting> Metingen {  get; set; }
 
-        public List<Meting> GeefMetingen()
+        protected Weerstation(Stad stad)
         {
-            return Metingen;
+            Stad = stad;
         }
 
-        public Meting GenereerMeting()
+        protected Weerstation(Stad stad, List<Meting> metingen)
         {
-            Meting meting;
+            Stad = stad;
+            Metingen = metingen;
+        }
 
-            return meting;
+        public override string ToString()
+        {
+            return $"{Stad}";
         }
     }
 }

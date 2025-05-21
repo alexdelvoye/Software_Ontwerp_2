@@ -1,6 +1,8 @@
+using WeerEventsApi.Steden;
+
 namespace WeerEventsApi.Facade.Dto;
 
 public class WeerStationDto
 {
-    //TODO
+    public required Stad Stad { get; set; }
 }
