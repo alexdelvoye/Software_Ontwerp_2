@@ -17,27 +17,27 @@ namespace WeerEventsApi.Stations.Factories
             steden = _stadManager.GeefSteden().ToList();
             for (int i = 0; i < 12; i++)
             {
-                int num = random.Next(1, 5);
+                int num = random.Next(0, 4);
                 int k = random.Next(0, 3);
 
-                if (num == 1)
+                if (num == 0)
                 {
                     Weerstation luchtdrukStation = new LuchtdrukStation(steden[k]);
                     weerstations.Add(luchtdrukStation);
                 }
-                else if (num == 2)
+                else if (num == 1)
                 {
-                    Weerstation neerslagStation = new LuchtdrukStation(steden[k]);
+                    Weerstation neerslagStation = new NeerslagStation(steden[k]);
                     weerstations.Add(neerslagStation);
                 }
-                else if (num == 3)
+                else if (num == 2)
                 {
-                    Weerstation temperatuurStation = new LuchtdrukStation(steden[k]);
+                    Weerstation temperatuurStation = new TemperatuurStation(steden[k]);
                     weerstations.Add(temperatuurStation);
                 }
                 else
                 {
-                    Weerstation windStation = new LuchtdrukStation(steden[k]);
+                    Weerstation windStation = new WindStation(steden[k]);
                     weerstations.Add(windStation);
                 }
             }

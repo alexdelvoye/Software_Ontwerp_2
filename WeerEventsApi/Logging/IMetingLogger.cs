@@ -1,6 +1,9 @@
+using WeerEventsApi.Metingen;
+using WeerEventsApi.Logging.Observer;
+
 namespace WeerEventsApi.Logging;
 
-public interface IMetingLogger
+public interface IMetingLogger : IObserver
 {
-    void Log(string message);
+    void Log(Meting meting);
 }

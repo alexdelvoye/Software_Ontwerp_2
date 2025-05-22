@@ -1,4 +1,3 @@
-using WeerEventsApi.Steden;
 using WeerEventsApi.Steden.Repositories;
 
 namespace WeerEventsApi.Steden.Managers;

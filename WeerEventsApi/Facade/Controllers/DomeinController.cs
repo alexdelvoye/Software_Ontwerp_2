@@ -1,7 +1,10 @@
 using WeerEventsApi.Facade.Dto;
-using WeerEventsApi.Stations.Factories;
+using WeerEventsApi.Logging;
+using WeerEventsApi.Stations;
 using WeerEventsApi.Stations.Managers;
 using WeerEventsApi.Steden.Managers;
+using WeerEventsApi.Weerberichten;
+using WeerEventsApi.Weerberichten.Manager;
 
 namespace WeerEventsApi.Facade.Controllers;
 
@@ -9,11 +12,23 @@ public class DomeinController : IDomeinController
 {
     private readonly IStadManager _stadManager;
     private readonly IWeerstationManager _weerstationManager;
-
-    public DomeinController(IStadManager stadManager, IWeerstationManager weerstationManager)
+    private readonly IMetingLogger _metingLogger;
+    private readonly IWeerBerichtManager _weerBerichtProxy;
+    
+    public DomeinController(IStadManager stadManager, IWeerstationManager weerstationManager, IMetingLogger metingLogger, IWeerBerichtManager weerBerichtProxy)
     {
         _stadManager = stadManager;
         _weerstationManager = weerstationManager;
+        _metingLogger = metingLogger;
+        _weerBerichtProxy = weerBerichtProxy;
+        _weerstationManager.MaakWeerstations();
+        _weerstationManager.DoeMeting();
+
+        foreach(Weerstation weerstation in _weerstationManager.GeefWeerstations())
+        {
+            weerstation.RegisterObserver(_metingLogger);
+            weerstation.MetingGemaakt += (sender, meting) => _weerBerichtProxy.VoegMetingToe(meting);
+        }
     }
 
     public IEnumerable<StadDto> GeefSteden()
@@ -36,19 +51,24 @@ public class DomeinController : IDomeinController
 
     public IEnumerable<MetingDto> GeefMetingen()
     {
-        //TODO
-        throw new NotImplementedException();
+        return _weerstationManager.GeefMetingen().Select(m => new MetingDto
+        {
+            MomentMeting = m.momentMeting,
+            Waarde = m.waarde,
+            Eenheid = m.eenheid,
+            StadNaam = m.Stad.Naam
+        });
     }
 
     public void DoeMetingen()
     {
-        //TODO
-        throw new NotImplementedException();
+        _weerstationManager.DoeMeting();
     }
 
     public WeerBerichtDto GeefWeerbericht()
     {
-        //TODO
-        throw new NotImplementedException();
+        Weerbericht weerbericht = _weerBerichtProxy.MaakWeerbericht();
+
+        return new WeerBerichtDto { MomentCreatie = weerbericht.MomentCreatie, TekstueleInhoud = weerbericht.TekstueleInhoud };
     }
 }

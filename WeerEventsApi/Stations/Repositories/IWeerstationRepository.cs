@@ -1,6 +1,4 @@
-﻿using WeerEventsApi.Steden;
-
-namespace WeerEventsApi.Stations.Repositories
+﻿namespace WeerEventsApi.Stations.Repositories
 {
     public interface IWeerstationRepository
     {

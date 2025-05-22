@@ -6,11 +6,12 @@ namespace WeerEventsApi.Metingen
     {
         public DateTime momentMeting {  get; set; }
         public double waarde {  get; set; }
-        public List<string> eenheid = new List<string>{"Kilometer Per Uur",
-                                                "Millimeter Per Vierkante Meter Per Uur",
-                                                "Graden Celsius",
-                                                "Hecto Pascal"
-        };
-        public Stad Stad {  get; set; }       
+        public string eenheid { get; set; }
+        public Stad Stad {  get; set; }
+
+        public override string ToString()
+        {
+            return $"{Stad.Naam}, {momentMeting}, {waarde}, {eenheid}" ;
+        }
     }
 }

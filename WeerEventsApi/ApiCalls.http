@@ -6,6 +6,14 @@ GET http://localhost:5008/
 ### GET steden
 GET http://localhost:5008/steden
 
-###
+### GET weerstations
+GET http://localhost:5008/weerstations
 
-//TODO api tests aanvullen
+### GET metingen
+GET http://localhost:5008/metingen
+
+### GET weerbericht
+GET http://localhost:5008/weerbericht
+
+### POST metingen
+POST http://localhost:5008/doemetingen
