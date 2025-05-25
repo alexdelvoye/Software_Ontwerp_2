@@ -1,7 +1,5 @@
-### GET
+### GET home
 GET http://localhost:5008/
-
-###
 
 ### GET steden
 GET http://localhost:5008/steden
@@ -15,5 +13,5 @@ GET http://localhost:5008/metingen
 ### GET weerbericht
 GET http://localhost:5008/weerbericht
 
-### POST metingen
+### POST doemetingen
 POST http://localhost:5008/doemetingen

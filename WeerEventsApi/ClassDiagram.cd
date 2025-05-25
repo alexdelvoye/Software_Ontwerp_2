@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeerEventsApi.Facade.Controllers.DomeinController" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAUACAAAAAAAEAAAABQAAAAQAAAAAAABAA=</HashCode>
+      <FileName>Facade\Controllers\DomeinController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Facade.Dto.MetingDto">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAIAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAA=</HashCode>
+      <FileName>Facade\Dto\MetingDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Facade.Dto.StadDto">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>Facade\Dto\StadDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Facade.Dto.WeerBerichtDto">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Dto\WeerBerichtDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Facade.Dto.WeerStationDto">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Dto\WeerStationDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Logging.Decorators.JsonLoggerDecorator">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\Decorators\JsonLoggerDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Logging.Decorators.LoggerDecorator">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Logging\Decorators\LoggerDecorator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeerEventsApi.Logging.Decorators.XmlLoggerDecorator">
+    <Position X="9.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAgAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\Decorators\XmlLoggerDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Logging.Factories.MetingLoggerFactory">
+    <Position X="17.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\Factories\MetingLoggerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Logging.Observer.AbstractObservable">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAQgAAA=</HashCode>
+      <FileName>Logging\Observer\AbstractObservable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Logging.MetingLogger" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\MetingLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Metingen.Meting">
+    <Position X="15.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAAAAAAAAAAEAAAAAAAAAAAAAAACAAAAACAAAAA=</HashCode>
+      <FileName>Metingen\Meting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.Factories.WeerstationFactory">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAGAAAAAABAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Stations\Factories\WeerstationFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.Managers.WeerstationManager" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAACAAQBAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Stations\Managers\WeerstationManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Stations.Repositories.WeerstationRepository" BaseTypeListCollapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Stations\Repositories\WeerstationRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Stations.LuchtdrukStation">
+    <Position X="11.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Stations\LuchtdrukStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.NeerslagStation">
+    <Position X="13.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Stations\NeerslagStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.TemperatuurStation">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Stations\TemperatuurStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.Weerstation">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABgAAAAEAAAAAAAAAAAAAAECAAAAAAAAAAA=</HashCode>
+      <FileName>Stations\Weerstation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Stations.WindStation">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAA=</HashCode>
+      <FileName>Stations\WindStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Steden.Managers.StadManager" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Steden\Managers\StadManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Steden.Repositories.StadRepository" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Steden\Repositories\StadRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.169" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Steden.Stad">
+    <Position X="17.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAEAAAA=</HashCode>
+      <FileName>Steden\Stad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WeerEventsApi.Weerberichten.Manager.WeerBerichtManager" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAACAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weerberichten\Manager\WeerBerichtManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Weerberichten.Proxy.WeerBerichtProxy" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAiACAAAAAABAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weerberichten\Proxy\WeerBerichtProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeerEventsApi.Weerberichten.Weerbericht">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weerberichten\Weerbericht.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WeerEventsApi.Facade.Controllers.IDomeinController">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEACAAAAAAAAAAAAAQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Facade\Controllers\IDomeinController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Logging.Observer.IObserver">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\Observer\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Logging.IMetingLogger">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\IMetingLogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Stations.Managers.IWeerstationManager">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAQBAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Stations\Managers\IWeerstationManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Stations.Repositories.IWeerstationRepository">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Stations\Repositories\IWeerstationRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Steden.Managers.IStadManager">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Steden\Managers\IStadManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Steden.Repositories.IStadRepository">
+    <Position X="17.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Steden\Repositories\IStadRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeerEventsApi.Weerberichten.Manager.IWeerBerichtManager">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Weerberichten\Manager\IWeerBerichtManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
