@@ -34,7 +34,7 @@
 
 # Known Issues:
 # http://localhost:5008/doemetingen werkt niet, de weerstations doen geen nieuwe metingen.
-# gebruik de POST in ApiCalls.http zoals beschreven hierboven beschreven onder - Visual Studio om
+# Gebruik de POST in ApiCalls.http zoals beschreven hierboven onder - Visual Studio om
 # nieuwe metingen te doen.
 
 # Klassendiagram:
